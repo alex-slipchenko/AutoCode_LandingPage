@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	
+	<title>AutoCode</title>
+
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!-- -------icons------- -->
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+	
+ 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	
+	<!-- -------fonts--------- -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+
+	<!-- ------bootstrap-reboot------- -->
+	<link rel="stylesheet" href="css/bootstrap-reboot.css">
+
+	<!-- ---------bootstrap-min------------ -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+	<!-- -------arctic-modal------- -->
+	<link rel="stylesheet" href="css/jquery.arcticmodal-0.3.css">
+
+	<!-- Fonts-gamburger -->
+	<!-- <link href='https://fonts.googleapis.com/css?family=Raleway:400,900' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+ -->
+	 <!-- ---------css-gb -->
+	 <link rel="stylesheet" href="css/style-gb.css">
+
+	
+	<!-- --------mane-css-------- -->
+	<link rel="stylesheet" href="css/style.css">
+
+
+
+
+	
+	<!-- ---------media-queris---------- -->
+	<link rel="stylesheet" href="css/media-queris.css">
+</head>
+<body>
+	<!-- -----preloader-----=- -->
+	<div id="page-preloader"  class="preloader">
+		<div class="loader">
+		</div>
+	</div>
+<!-- -------section-header-------- -->
+	<header class="header">
+		<div  class="navigation">
+			<div class="container">
+				<div class="buttons">
+					<ul class="buttons__ul">
+						<li class="buttons__li"><a title="Kievstar" href="tel:+380968362993"><img src="img/icons-kievstar.png" alt="kievstar"></a></li>
+						<li class="buttons__li"><a title="Viber" href="viber://chat?number=+80968362993"><img src="img/viber-btn.png" alt=""></a></li>
+						<li class="buttons__li"><a href="tel:+380997964999"><img src="img/mts-logo.png" alt=""></a></li>
+					</ul>
+					<div class="buttons__long d-flex">
+						<a href="#"class="buttons__long__phone d-flex">
+							<img src="img/icons8-phone-filled-50.png" alt="phone" class="buttons__long__img img-fluid" >
+						</a>
+						<a href="#" class="buttons__long__text d-flex">
+							<span class="long-text__span">заказать звонок</span>
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class=" col-6 col-lg-2 col-md-3">
+						<img class="logo-img" src="img/logo.png" alt="logo">
+					</div>
+					<div class="col-6  col-md-9 col-lg-10 d-flex align-items-center ">
+						<div class="ul-wrap align-items-sm-center d-lg-flex">	
+							<ul class="connection d-none d-sm-flex">
+								<li class="connection__item  connection__item_viber"><a   title="Viber" href="viber://chat?number=+80968362993" class="connection__link"><svg class="pad"  width="21" height="21" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path style="fill:#ffffff" d="M444 49.9C431.3 38.2 379.9.9 265.3.4c0 0-135.1-8.1-200.9 52.3C27.8 89.3 14.9 143 13.5 209.5c-1.4 66.5-3.1 191.1 117 224.9h.1l-.1 51.6s-.8 20.9 13 25.1c16.6 5.2 26.4-10.7 42.3-27.8 8.7-9.4 20.7-23.2 29.8-33.7 82.2 6.9 145.3-8.9 152.5-11.2 16.6-5.4 110.5-17.4 125.7-142 15.8-128.6-7.6-209.8-49.8-246.5zM457.9 287c-12.9 104-89 110.6-103 115.1-6 1.9-61.5 15.7-131.2 11.2 0 0-52 62.7-68.2 79-5.3 5.3-11.1 4.8-11-5.7 0-6.9.4-85.7.4-85.7-.1 0-.1 0 0 0-101.8-28.2-95.8-134.3-94.7-189.8 1.1-55.5 11.6-101 42.6-131.6 55.7-50.5 170.4-43 170.4-43 96.9.4 143.3 29.6 154.1 39.4 35.7 30.6 53.9 103.8 40.6 211.1zm-139-80.8c.4 8.6-12.5 9.2-12.9.6-1.1-22-11.4-32.7-32.6-33.9-8.6-.5-7.8-13.4.7-12.9 27.9 1.5 43.4 17.5 44.8 46.2zm20.3 11.3c1-42.4-25.5-75.6-75.8-79.3-8.5-.6-7.6-13.5.9-12.9 58 4.2 88.9 44.1 87.8 92.5-.1 8.6-13.1 8.2-12.9-.3zm47 13.4c.1 8.6-12.9 8.7-12.9.1-.6-81.5-54.9-125.9-120.8-126.4-8.5-.1-8.5-12.9 0-12.9 73.7.5 133 51.4 133.7 139.2zM374.9 329v.2c-10.8 19-31 40-51.8 33.3l-.2-.3c-21.1-5.9-70.8-31.5-102.2-56.5-16.2-12.8-31-27.9-42.4-42.4-10.3-12.9-20.7-28.2-30.8-46.6-21.3-38.5-26-55.7-26-55.7-6.7-20.8 14.2-41 33.3-51.8h.2c9.2-4.8 18-3.2 23.9 3.9 0 0 12.4 14.8 17.7 22.1 5 6.8 11.7 17.7 15.2 23.8 6.1 10.9 2.3 22-3.7 26.6l-12 9.6c-6.1 4.9-5.3 14-5.3 14s17.8 67.3 84.3 84.3c0 0 9.1.8 14-5.3l9.6-12c4.6-6 15.7-9.8 26.6-3.7 14.7 8.3 33.4 21.2 45.8 32.9 7 5.7 8.6 14.4 3.8 23.6z"/></svg></a></li>
+								<li class="connection__item connection__item_telegram"><a title="Telegram" href="tg://resolve?domain=александр слипченко" class="connection__link"><svg width="14" height="14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path style="fill:#ffffff" d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"/></svg></a></li>
+								<li class="connection__item connection__item_whatsapp"><a title="WhatsApp" href="https://api.whatsapp.com/send?phone=380968362993" class="connection__link"><svg class="pad"  width="19" height="19" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path style="fill:#ffffff" d="M444 49.9C431.3 38.2 379.9.9 265.3.4c0 0-135.1-8.1-200.9 52.3C27.8 89.3 14.9 143 13.5 209.5c-1.4 66.5-3.1 191.1 117 224.9h.1l-.1 51.6s-.8 20.9 13 25.1c16.6 5.2 26.4-10.7 42.3-27.8 8.7-9.4 20.7-23.2 29.8-33.7 82.2 6.9 145.3-8.9 152.5-11.2 16.6-5.4 110.5-17.4 125.7-142 15.8-128.6-7.6-209.8-49.8-246.5zM457.9 287c-12.9 104-89 110.6-103 115.1-6 1.9-61.5 15.7-131.2 11.2 0 0-52 62.7-68.2 79-5.3 5.3-11.1 4.8-11-5.7 0-6.9.4-85.7.4-85.7-.1 0-.1 0 0 0-101.8-28.2-95.8-134.3-94.7-189.8 1.1-55.5 11.6-101 42.6-131.6 55.7-50.5 170.4-43 170.4-43 96.9.4 143.3 29.6 154.1 39.4 35.7 30.6 53.9 103.8 40.6 211.1zm-139-80.8c.4 8.6-12.5 9.2-12.9.6-1.1-22-11.4-32.7-32.6-33.9-8.6-.5-7.8-13.4.7-12.9 27.9 1.5 43.4 17.5 44.8 46.2zm20.3 11.3c1-42.4-25.5-75.6-75.8-79.3-8.5-.6-7.6-13.5.9-12.9 58 4.2 88.9 44.1 87.8 92.5-.1 8.6-13.1 8.2-12.9-.3zm47 13.4c.1 8.6-12.9 8.7-12.9.1-.6-81.5-54.9-125.9-120.8-126.4-8.5-.1-8.5-12.9 0-12.9 73.7.5 133 51.4 133.7 139.2zM374.9 329v.2c-10.8 19-31 40-51.8 33.3l-.2-.3c-21.1-5.9-70.8-31.5-102.2-56.5-16.2-12.8-31-27.9-42.4-42.4-10.3-12.9-20.7-28.2-30.8-46.6-21.3-38.5-26-55.7-26-55.7-6.7-20.8 14.2-41 33.3-51.8h.2c9.2-4.8 18-3.2 23.9 3.9 0 0 12.4 14.8 17.7 22.1 5 6.8 11.7 17.7 15.2 23.8 6.1 10.9 2.3 22-3.7 26.6l-12 9.6c-6.1 4.9-5.3 14-5.3 14s17.8 67.3 84.3 84.3c0 0 9.1.8 14-5.3l9.6-12c4.6-6 15.7-9.8 26.6-3.7 14.7 8.3 33.4 21.2 45.8 32.9 7 5.7 8.6 14.4 3.8 23.6z"/></svg></a></li>
+								<li class="connection__tel"><a href="tel:+380968362993" class="connection__tel__link"><svg  width="17px" height="17px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path id="phone" fill="#ffffff" d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"/></svg>  +3 8 (096) 836 29 93</a></li>
+							</ul>
+							<ul class="connection d-none d-md-flex">
+								<li class="connection__item connection__item_viber"><a title="Viber" href="viber://chat?number=+80968362993"  class="connection__link"><svg width="21" height="21"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path style="fill:#ffffff" d="M444 49.9C431.3 38.2 379.9.9 265.3.4c0 0-135.1-8.1-200.9 52.3C27.8 89.3 14.9 143 13.5 209.5c-1.4 66.5-3.1 191.1 117 224.9h.1l-.1 51.6s-.8 20.9 13 25.1c16.6 5.2 26.4-10.7 42.3-27.8 8.7-9.4 20.7-23.2 29.8-33.7 82.2 6.9 145.3-8.9 152.5-11.2 16.6-5.4 110.5-17.4 125.7-142 15.8-128.6-7.6-209.8-49.8-246.5zM457.9 287c-12.9 104-89 110.6-103 115.1-6 1.9-61.5 15.7-131.2 11.2 0 0-52 62.7-68.2 79-5.3 5.3-11.1 4.8-11-5.7 0-6.9.4-85.7.4-85.7-.1 0-.1 0 0 0-101.8-28.2-95.8-134.3-94.7-189.8 1.1-55.5 11.6-101 42.6-131.6 55.7-50.5 170.4-43 170.4-43 96.9.4 143.3 29.6 154.1 39.4 35.7 30.6 53.9 103.8 40.6 211.1zm-139-80.8c.4 8.6-12.5 9.2-12.9.6-1.1-22-11.4-32.7-32.6-33.9-8.6-.5-7.8-13.4.7-12.9 27.9 1.5 43.4 17.5 44.8 46.2zm20.3 11.3c1-42.4-25.5-75.6-75.8-79.3-8.5-.6-7.6-13.5.9-12.9 58 4.2 88.9 44.1 87.8 92.5-.1 8.6-13.1 8.2-12.9-.3zm47 13.4c.1 8.6-12.9 8.7-12.9.1-.6-81.5-54.9-125.9-120.8-126.4-8.5-.1-8.5-12.9 0-12.9 73.7.5 133 51.4 133.7 139.2zM374.9 329v.2c-10.8 19-31 40-51.8 33.3l-.2-.3c-21.1-5.9-70.8-31.5-102.2-56.5-16.2-12.8-31-27.9-42.4-42.4-10.3-12.9-20.7-28.2-30.8-46.6-21.3-38.5-26-55.7-26-55.7-6.7-20.8 14.2-41 33.3-51.8h.2c9.2-4.8 18-3.2 23.9 3.9 0 0 12.4 14.8 17.7 22.1 5 6.8 11.7 17.7 15.2 23.8 6.1 10.9 2.3 22-3.7 26.6l-12 9.6c-6.1 4.9-5.3 14-5.3 14s17.8 67.3 84.3 84.3c0 0 9.1.8 14-5.3l9.6-12c4.6-6 15.7-9.8 26.6-3.7 14.7 8.3 33.4 21.2 45.8 32.9 7 5.7 8.6 14.4 3.8 23.6z"/></svg></a></li>
+								<li class="connection__item connection__item_telegram"><a title="Telegram" href="tg://resolve?domain=александр слипченко"  class="connection__link"><svg width="14" height="14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path style="fill:#ffffff" d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"/></svg></a></li>
+								<li class="connection__item connection__item_whatsapp"><a title="WhatsApp" href="https://api.whatsapp.com/send?phone=380968362993"  class="connection__link"><svg class="pad"  width="19" height="19" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path style="fill:#ffffff" d="M444 49.9C431.3 38.2 379.9.9 265.3.4c0 0-135.1-8.1-200.9 52.3C27.8 89.3 14.9 143 13.5 209.5c-1.4 66.5-3.1 191.1 117 224.9h.1l-.1 51.6s-.8 20.9 13 25.1c16.6 5.2 26.4-10.7 42.3-27.8 8.7-9.4 20.7-23.2 29.8-33.7 82.2 6.9 145.3-8.9 152.5-11.2 16.6-5.4 110.5-17.4 125.7-142 15.8-128.6-7.6-209.8-49.8-246.5zM457.9 287c-12.9 104-89 110.6-103 115.1-6 1.9-61.5 15.7-131.2 11.2 0 0-52 62.7-68.2 79-5.3 5.3-11.1 4.8-11-5.7 0-6.9.4-85.7.4-85.7-.1 0-.1 0 0 0-101.8-28.2-95.8-134.3-94.7-189.8 1.1-55.5 11.6-101 42.6-131.6 55.7-50.5 170.4-43 170.4-43 96.9.4 143.3 29.6 154.1 39.4 35.7 30.6 53.9 103.8 40.6 211.1zm-139-80.8c.4 8.6-12.5 9.2-12.9.6-1.1-22-11.4-32.7-32.6-33.9-8.6-.5-7.8-13.4.7-12.9 27.9 1.5 43.4 17.5 44.8 46.2zm20.3 11.3c1-42.4-25.5-75.6-75.8-79.3-8.5-.6-7.6-13.5.9-12.9 58 4.2 88.9 44.1 87.8 92.5-.1 8.6-13.1 8.2-12.9-.3zm47 13.4c.1 8.6-12.9 8.7-12.9.1-.6-81.5-54.9-125.9-120.8-126.4-8.5-.1-8.5-12.9 0-12.9 73.7.5 133 51.4 133.7 139.2zM374.9 329v.2c-10.8 19-31 40-51.8 33.3l-.2-.3c-21.1-5.9-70.8-31.5-102.2-56.5-16.2-12.8-31-27.9-42.4-42.4-10.3-12.9-20.7-28.2-30.8-46.6-21.3-38.5-26-55.7-26-55.7-6.7-20.8 14.2-41 33.3-51.8h.2c9.2-4.8 18-3.2 23.9 3.9 0 0 12.4 14.8 17.7 22.1 5 6.8 11.7 17.7 15.2 23.8 6.1 10.9 2.3 22-3.7 26.6l-12 9.6c-6.1 4.9-5.3 14-5.3 14s17.8 67.3 84.3 84.3c0 0 9.1.8 14-5.3l9.6-12c4.6-6 15.7-9.8 26.6-3.7 14.7 8.3 33.4 21.2 45.8 32.9 7 5.7 8.6 14.4 3.8 23.6z"/></svg></a></li>
+								<li class="connection__tel"><a href="tel:+380997964999" class="connection__tel__link"><svg  width="17px" height="17px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path id="phone" fill="#ffffff" d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"/></svg>  +3 8 (099) 796 49 99</a></li>
+							</ul>
+						</div>
+						<button class="nav-btn btn d-none d-lg-flex"  type="button">
+							Заказать звонок
+						</button>
+						<div class="navBurger d-lg-none" role="navigation" id="navToggle"></div> 
+						<!-- <button type="button" class="menu-btn  d-lg-none">
+							<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50" style=" fill:#f5a636;"><g id="surface1"><path style=" " d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z "></path></g></svg>
+						</button> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-offer">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<nav class="menu">
+							<ul class="menu__wrap d-flex justify-content-between">
+								<li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">Приемущества</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">ОСАГО</a></li>
+								<li class="menu__item"><a href="#" class="menu__link"> Зеленая карта</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">Как застраховать автомобиль</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="offer text-center">
+							<h1 class="offer__title"><span class="span-title">Онлайн-сервис</span> ОСАГО и Зеленая карта</h1>
+							<p class="offer__text"><span class="offer__text__bg">Обязательное  автострахование</span> ОСАГО и Зеленая карта  <span  class="offer__text__yel">с доставкой</span> Качественная и быстрая консультация и  <span class="offer__text__bg">расчет стоимости</span></p>
+							<button class="offer__btn btn">Заказать страховку</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>	
+		<!-- -------section-about------- -->
+		<section class="about">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="about-wrap">
+							<h2 class="about-wrap__title">О компании</h2>
+							<p class="about-wrap__text">Онлайн-сервис Avto Code уже более 8 лет помогает своим клиентам выгодно и обязательно качествено оформить страховку.</p>
+							<p class="about-wrap__text">Наша команда предлагает услуги страхования на самых выгодных условиях для владельцев автомобиля.Так как мы сотрудничаем с самыми надежными страховыми компаниями.</p>
+							<p class="about-wrap__text">Наши специалисты всегда объяснят вам все тонкости при оформлениии документов,помогут и подскажут при выборе услуг и их вариантов.</p>
+							<p class="about-wrap__text">Главной целью сервиса является возможность сделать процес покупки и оформления полиса максимально простым и удобным.Для этого мы предлагаем оформление страховки онлайн.</p>
+							<p class="about-wrap__text">Оформляя полис онлайн,договор хранится в базе МТСБУ,что гарантирпует вам законность купленной страховки.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- --------section-choice-------- -->
+		<section class="choice">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<h2 class="choice-title"><span>Почему</span> <span>нас выбирают</span></h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xl-2 col-md-4 col-sm-6">
+						<div class="icon">
+							<div class="icon__elem"><img src="img/icons8-free-shipping-50.png" alt="free"></div>
+							<p class="icon__text">Бесплатная доставка</p>
+						</div>
+					</div>
+					<div class="col-xl-2 col-md-4 col-sm-6">
+						<div class="icon">
+							<div class="icon__elem"><img src="img/icons8-guarantee-50.png" alt="guarantee"></div>
+							<p class="icon__text">Выгодные предложения</p>
+						</div>
+					</div>
+					<div class="col-xl-2 col-md-4 col-sm-6">
+						<div class="icon">
+							<div class="icon__elem"><img src="img/icons8-consultation-50.png" alt="consultation"></div>
+							<p class="icon__text">Консультация специалистов</p>
+						</div>
+					</div>
+					<div class="col-xl-2 col-md-4 col-sm-6">
+						<div class="icon">
+							<div class="icon__elem"><img src="img/icons8-warranty-50.png" alt="waranty"></div>
+							<p class="icon__text">Гарантия законности</p>
+						</div>
+					</div>
+					<div class="col-xl-2 col-md-4 col-sm-6">
+						<div class="icon icon_long">
+							<div class="icon__elem"><img src="img/icons8-online-50 (1).png" alt="online"></div>
+							<p class="icon__text icon__text_long">Онлайн оформление документов</p>
+						</div>
+					</div>
+					<div class="col-xl-2 col-md-4 col-sm-6">
+						<div class="icon">
+							<div class="icon__elem"><img src="img/icons8-country-50.png" alt="coutry"></div>
+							<p class="icon__text">Работаем по всей Украине</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ---------section-text------- -->
+		<section class="text">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7 ">
+						<h2 class="osago-title">Автостраховка ОСАГО в Украине</h2>
+						<p class="osago-text">Автостраховка ОСАГО на территории Украины является обязательным видом страхования гражданско-правовой ответственности для наземных транспортных средств, за эксплуатацию ТС без данной страховки полагается штраф .Страховой полис ОСАГО компенсирует ущерб потерпевшим в результате ДТП.Он может сэкономить немалые деньги, если вы вдруг станете виновником аварии. Так же с полисом ОСАГО вы можете рассчитывать на возмещение причиненного вам ущерба в результате ДТП, если он будет нанесен неустановленным транспортным средством или автомобилем, собственник которого не застраховался или управлял им, не имея на то право. В таких случаях деньги выделяет фонд защиты потерпевших МТСБУ.</p>
+					</div>
+					<div class="col-lg-5 "><img class="img-fluid hyundai-img" src="img/hyundai_Car_PNG.png" alt=""></div>
+				</div>
+				<div class="row">
+					<div class="col-lg-7">
+						<div>
+							<h2 class="green__title">Зеленая карта Украина</h2>
+							<img src="img/hyundai_Car_PNG.png" alt="hyundai_Car" class="d-none">
+						</div>
+						<p class="green-text">
+							Автостраховка ОСАГО на территории Украины является обязательным видом страхования гражданско-правовой ответственности для наземных транспортных средств, за эксплуатацию ТС без данной страховки полагается штраф .Страховой полис ОСАГО компенсирует ущерб потерпевшим в результате ДТП.Он может сэкономить немалые деньги, если вы вдруг станете виновником аварии. Так же с полисом ОСАГО вы можете рассчитывать на возмещение причиненного вам ущерба в результате ДТП, если он будет нанесен неустановленным транспортным средством или автомобилем, собственник которого не застраховался или управлял им, не имея на то право. В таких случаях деньги выделяет фонд защиты потерпевших МТСБУ.
+						</p>	
+					</div>
+					<div class="col-lg-5 truck">
+						<img src="img/4.png" alt="" class="img-fluid truck__img">
+					</div>
+				</div>	
+			</div>
+		</section>
+		<!-- ------section-men-top------- -->
+		<section class="man-top">
+			<img src="img/businessman-with-laptop-png-8.png " alt="man" class="man-top__img">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7">
+						<h2 class="way-title">Как застраховать свой автомобиль</h2>
+						<ul class="ways ">
+							<li class="ways__item d-flex">
+								<span class="ways__item__span">01</span>
+								<p class="ways__item__text">Позвонить нам,заказать обратный звонок или заполнить форму на сайте</p>
+							</li>
+							<li class="ways__item d-flex">
+								<span class="ways__item__span">
+									02
+								</span>
+								<p class="ways__item__text">
+									Вместе с нашим специалистом по страхованию выбрать наиболе оптимальный вариант полиса
+								</p></li>
+							<li class="ways__item d-flex"><span class="ways__item__span">03</span>
+								<p class="ways__item__text">Получить свой полис удобным вам способом-в отделении Новой Почты или онлайн</p></li>
+						</ul>
+						<form action="#" class=" form man-top__form ">
+							<h3 class="form__title">
+								Оставьте заявку
+							</h3>
+							<p class="form__text">
+								В ближайшее время мы с Вами свяжемся
+							</p>
+							<input type="text" class="form__input" placeholder="Введите имя" name="name" required>
+							<input type="text" class="form__input" placeholder="Обьем и Ваш город регистрации" name="mail" required>
+							<input type="text" class="form__input" placeholder="Номер телефона" name="tel" required>
+							<button type="submit" class="form__send">
+								Заказать страховку
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- -------section-reviews-------- -->
+		<section class="reviews">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div>
+							<h2>Отзывы наших клиентов</h2>
+						</div>
+						<div class="wrap-review ">
+							<div class=" one-time description">
+								<div>
+									<span class="description__name">Дмитрий</span>
+									<time datetime="<08.02.2019>" >8 / 02 / 2019</time>
+									<p class="description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitationе ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa .Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa</p>
+								</div>
+								<div>
+									<span class="description__name">Дмитрий</span>
+									<time datetime="<08.02.2019>" >8 / 02 / 2019</time>
+									<p class="description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitationе ullamco laboris nisi ut aliquip ex ea commodo a</p>
+								</div>
+								<div>
+									<span class="description__name">Дмитрий</span>
+									<time datetime="<08.02.2019>" >8 / 02 / 2019</time>
+									<p class="description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitationе ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa .Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa</p>
+								</div>
+							</div>
+
+
+							<img src="img/рукопожатие.png" alt="отзывы" class=" wrap-review__img">
+						</div>
+					</div>
+				</div>
+			</div> 
+		</section>
+		<!-- -----section-sk----- -->
+		<section class="section-sk">
+			<div class="container">
+				<div class="row">
+					<h3 class="section-sk__title">Наши партнеры</h3>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class=" wrap-img ">
+							  <div class="sl">
+							  	<a href="#" class="sl__slide">
+							  		<img class="img-fluid tass" src="img/taas.png" alt="tass">
+							  	</a>
+							  	<a href="#"class="sl__slide">
+							  		<img class="img-fluid universalna" src="img/universalna-logo.png" alt="aska">
+							  	</a>
+							  	<a href="#"class="sl__slide">
+							  		<img class="img-fluid" src="img/unives-logo-ukr.png" alt="unives">
+							  	</a>
+							  	<a href="#"class="sl__slide">
+							  		<img class="img-fluid vuso" src="img/vuso.png" alt="vuso">
+							  	</a>
+							  	<a href="#" class="sl__slide">
+							  		<img class="img-fluid aska" src="img/aska.png" alt="aska">
+							  	</a>
+							  	<a href="#" class="sl__slide">
+							  		<img class="img-fluid oranta" src="img/oranta.png" alt="oranta">
+							  	</a>
+							  	<a href="#" class="sl__slide">
+							  		<img class="img-fluid tass" src="img/taas.png" alt="tass">
+							  	</a>
+							  	<a href="#" class="sl__slide">
+							  		<img class="img-fluid universalna" src="img/universalna-logo.png" alt="aska">
+							  	</a>
+							  	<a href="#" class="sl__slide">
+							  		<img class="img-fluid" src="img/unives-logo-ukr.png" alt="unives">
+							  	</a>
+							  	<a href="#" class="sl__slide">
+							  		<img class="img-fluid vuso" src="img/vuso.png" alt="vuso">
+							  	</a>
+							  	<a href="#" class="sl__slide">
+							  		<img class="img-fluid aska" src="img/aska.png" alt="aska">
+							  	</a>
+							  	<a href="#" class="sl__slide">
+							  		<img class="img-fluid oranta" src="img/oranta.png" alt="oranta">
+							  	</a>
+							  	</div>
+							  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- -----section-map----- -->
+		<section class="maps">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="wrap-map d-xl-flex justify-content-lg-between">
+							<div class="coordinates">
+								<img src="img/logo.png" alt="logo">
+								<ul class="coordinates__ul">
+									<li class="coordinates__li d-flex justify-content-sm-between">
+										<img src="img/icons8-маркер-25.png" alt="marker" class="coordinates__img coordinates__img_marker">
+										<a href="#" class="coordinates__link coordinates__link_padding"><p>г.Днепр,ул.Сергея Подолинского (Благоева),31 оф.302</p></a>
+									</li>
+									<li class="coordinates__li d-flex justify-content-sm-between">
+										<img src="img/icons8-phone.png" alt="phone" class="coordinates__img">
+										<a href="tel:+380997964999"  class="coordinates__link">+3 8 (099) 79 64 999</a>
+									</li>
+									<li class="coordinates__li d-flex justify-content-sm-between">
+										<img src="img/icons8-phone.png" alt="phone" class="coordinates__img">
+										<a href="tel:+380968362993"  class="coordinates__link">+3 8 (096)  836 29 93</a>
+									</li>
+								</ul>
+							</div>
+							<div id="map">
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="wrap-skype">
+							<img src="img/phone-main.png" alt="icon-tel" class="wrap-skype__img img-fluid">
+							<div class="questions">
+								<h3 class="questions__title">Остались вопросы?</h3>
+								<p class="questions__text">Заполните форму и мы Вам перезвоним</p>
+							</div>
+						</div>
+						<div class="wrap-line">
+							
+						</div>
+						<form action="#" class="wrap-form">
+							<input type="text" class="form__input" placeholder="Введите имя" name="name" required>
+							<input type="text" class="form__input" placeholder="Номер телефона" name="tel" required>
+							<button type="submit" class="form__send">
+								Заказать страховку
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- -----section-footer----- -->
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-9">
+						<div class="adress-logo">
+							<a href="#" class="adress-logo__picture"><img class="logo-img adress-logo__img" src="img/logo.png" alt="logo"></a>
+							<a href="#" class="adress-logo__link">
+								<p class="adress-logo__text">
+									г.Днепр,ул.Сергея Подолинского (Благоева),31 оф.302
+								</p>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-3 d-none d-md-flex">
+						<div class="footer-about">
+							<a href="#" class="footer-about__link">
+								<p class="footer-about__text">О нас</p>
+							</a>
+							<a href="#" class="footer-about__link"><p class="footer-about__text">Приемущества</p></a>
+							<a href="#" class="footer-about__link"><p class="footer-about__text">Как застраховать автомобиль</p></a>
+						</div>
+					</div>
+					<div class="col-md-2 col-lg-3 d-none d-md-flex">
+						<div class="strah">
+							<a href="#" class="strah__link">
+								<p class="stah__text">ОСАГО</p>
+							</a>
+							<a href="#" class="strah__link">
+								<p class="stah__text">Зеленая карта</p>
+							</a>
+							<a href="#" class="strah__link">
+								<p class="stah__text">Отзывы</p>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-3 col-sm-6 col">
+						<div class="sots">
+							<div class="sots__tel">
+								<a href="tel:+380968362993" class="sots__link">+3 8 (096)  836 29 93 </a>
+								<a href="tel:+380997964999" class="sots__link">+3 8 (099) 79 64 999</a>
+							</div>
+							<ul class="sots__ul d-flex justify-content-between">
+								<li class="sots__li sots__li_telegr"><a title="Telegram" href="tg://resolve?domain=александр слипченко"><img src="img/footer-telegram.png" alt="" class="sots__icon"></a></li>
+								<li class="sots__li sots__li_inst"><a title="Telegram" href="https://www.instagram.com/slipchenko.aleksandr/" target="_blank"><img src="img/footer-instagram-43.png" alt="instagram" class="sots__icon"></a></li>
+								<li class="sots__li sots__li_face"><a href="https://m.facebook.com/profile.php?ref_component=mbasic_home_header&ref_page=%2Fwap%2Fhome.php&refid=7" target="_blank"><img src="img/footer-facebook-f-26.png" alt="" class="sots__icon"></a></li>
+							</ul>
+						</div>
+					</div>
+				
+			</div>
+		</footer>
+		
+
+
+<!-- --------------actic-modal------- -->
+
+<div style="display: none;">
+	<div class="box-modal" id="exampleModal">
+		<div class="box-modal_close arcticmodal-close">
+			<img src="img/icons8-clouse.png" alt="clouse" class="box-modal__clouse">
+		</div>
+		<form action="#" class=" form man-top__form ">
+			<h3 class="form__title">
+				Освьте заявку
+			</h3>
+			<p class="form__text">
+				В ближайшее время мы с Вами свяжемся
+			</p>
+			<input type="text" class="form__input" placeholder="Введите имя" name="name" required>
+			<input type="text" class="form__input" placeholder="Обьем и Ваш город регистрации" name="mail" required>
+			<input type="text" class="form__input" placeholder="Номер телефона" name="tel" required>
+			<button type="submit" class="form__send">
+				Заказать страховку
+			</button>
+		</form>
+	</div>
+</div>
+<!-- ---------------------arctic-modal-2------------ -->
+<div class="overlay">
+    <nav class="overlayMenu">  
+         <ul role="menu">
+            <li><a href="#" role="menuitem">О нас</a></li>
+             <li><a href="#" role="menuitem" class="menu_long1">Приемущества</a></li>
+             <li><a href="#" role="menuitem">ОСАГО</a></li>
+            <li><a href="#" role="menuitem" class="menu_long2">Зеленая карта</a></li>
+            <li><a href="#" role="menuitem" class="menu_long3">Как застраховать автомобиль</a></li>
+            <li><a href="#" role="menuitem">Отзывы</a></li>
+            <li><a href="#" role="menuitem">Контакты</a></li>
+        </ul> -->
+    </nav>
+</div>
+<!-- ------------------------------------------- -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/jquery.arcticmodal-0.3.min.js"></script>
+<script src="js/main.js"></script>
+<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSRoXWBa6E16QAG7pVX_KCosxQM5WR1OY&callback=initMap">
+</script>
+
+<script src="js/preloader.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,822 @@
+/* Media Queries */
+
+/* 992 - 1200 px-lg */
+@media screen and (max-width: 1199px) {
+
+
+.container {
+ 	width: 960px;
+ 	max-width: 100%
+ }
+.ul-wrap {
+	margin-left: auto;
+}
+
+
+.connection {
+	margin-left: 40px;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+.connection__item_viber,.connection__item_whatsapp{
+	padding: 0;
+}
+.connection__tel{
+	margin-top: 10px;
+}
+
+.connection__tel__link svg {
+	height: 15px;
+	width: 15px;
+}
+
+.offer__title {
+
+}
+
+.offer__text {
+	margin-top: 50px;
+	font-size: 18px;
+}
+
+.about-wrap {
+	background: url(../img/wrap-bg.png) ;
+	background-position: left bottom; /* Положение фона */
+    background-repeat: no-repeat;
+	padding:50px 450px 85px 40px;
+}
+
+.choice {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.icon__text {
+	margin-bottom: 33px;
+}
+
+.icon__text_long {
+	left: 30px;
+}
+
+.hyundai-img {
+	margin-top: 40px;
+}
+
+.truck__img {
+	margin-top: 40px;
+}
+
+.man-top {
+	overflow: hidden;
+}
+
+.man-top__img {
+	right: -200px;
+} 
+
+.wrap-review {
+	background-color: #fff;
+	flex-direction: column;
+	padding-top: 40px;
+
+}
+
+
+.coordinates {
+	padding-top: 0;
+}
+
+.description {
+	order: 2;
+	width: 100%;
+	height:100%;
+	margin-top: 20px;
+	padding-right: 40px;
+}
+
+.description time {
+	display: block;
+	
+}
+
+.description__text {
+	margin-top: 10px;
+}
+
+.wrap-review__img {
+	order: 1;
+	width: 90%;
+	height:90%;
+	margin: 0 auto;
+	border-radius: 10px;
+
+}
+/*------slider------*/
+
+.description .slick-next {
+    right: 14px;
+}
+/*--------------------*/
+.wrap-map {
+	padding-right: 90px;
+}
+.coordinates {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+#map {
+	width: auto;
+    height: 450px;
+}
+
+
+
+.questions {
+	margin-left: 30px;
+}
+
+.wrap-skype__img {
+	margin-left: 0;
+}
+
+.wrap-line {
+	margin-left: 550px;
+}
+
+.wrap-form {
+	margin-left: 320px;
+}
+
+}
+
+
+/* 768 - 992 px -md */
+
+@media screen and (max-width: 991px) {
+	
+.container {
+ 	width: 720px;
+ 	max-width: 100%
+ }
+
+.menu {
+	display: none;
+}
+
+.ul-wrap,.connection__tel {
+		margin:0;
+	}
+.connection {
+	margin-left: 0;
+}
+	
+.connection:not(:last-child) {
+	margin-bottom: 10px;
+}
+.ul-wrap {
+		margin-left: auto;
+	}
+
+.offer__title {
+	font-size: 37px;
+	line-height:50px;
+}
+ .offer__text {
+	margin-top: 27px;
+	line-height:30px;
+}
+
+.offer__text__bg {
+	color:#fff;
+}
+
+.about-wrap {
+	padding:50px 240px 85px 40px;
+}
+.about-wrap__title {
+    margin-bottom: 40px;
+}
+
+.icon__text_long {
+	left: 10px;
+}
+
+.hyundai-img {
+	margin-top: 0;
+	margin-bottom: 20px;
+	height: 85%;
+}
+
+.truck__img {
+	margin-top: 30px;
+}
+
+.text .truck {
+	order: 0;
+}
+
+.man-top {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.man-top__img {
+	height: 1047px;
+	top:0;
+	right: -300px;
+}
+
+.questions {
+	width: 450px;
+}
+
+.wrap-map {
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+.wrap-line {
+	margin-left: 480px;
+}
+
+.wrap-form {
+	margin-left: 260px;
+}
+
+.footer-about, .strah {
+	margin: 0;
+}
+
+.adress-logo p {
+	line-height: 26px;
+}
+
+.adress-logo__link {
+    margin-top: 12px;
+}
+
+.adress-logo a{
+
+    font-size: 15px;
+    font-weight: 400;
+
+}
+}
+
+/* 576 - 768 px -sm*/
+@media screen and (max-width: 767px) {
+
+.container {
+	 	width: 540px;
+	 	max-width: 100%;
+ }
+
+.connection:not(:last-child) {
+	margin-bottom: 0px;
+}
+
+ .connection__item {
+ 	margin-left: 10px;
+ 	width: 35px;
+	height: 35px;
+ }
+
+.connection__item svg {
+ 	width: 22px;
+ 	height: 22px;
+ }
+
+
+.connection__tel {
+	display: none;
+}
+
+.menu-btn {
+	margin: 0;
+}
+.menu-btn {
+	margin-left: auto;
+}
+
+.offer__title {
+	font-size: 34px;
+}
+
+.about {
+	padding: 119px 0 90px;
+	background-image: url(../img/about-img.png);
+}
+
+.about-wrap {
+	background-image: url(../img/about-wrap.png);
+	padding:50px;
+	height: 100%;	
+}
+.icon__text {
+	margin: 0;
+}
+
+.icon {
+	margin-bottom: 40px;
+}
+
+.icon__text_long {
+	left: 30px;
+}
+
+.text {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.hyundai-img {
+	height: auto;
+}
+
+.man-top__img {
+	display:none;
+}
+
+.section-sk h3 {
+	font-size: 21px;
+}
+
+.section-sk .slick-prev::before,.section-sk .slick-next::before {
+    font-family: 'slick';
+    display: flex;
+    padding: 0;
+	justify-content: center;
+	align-items: center;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+}
+
+.wrap-line {
+	margin-left: 300px;
+}
+
+.wrap-form {
+	margin-left: 30px;
+}
+
+.adress-logo__link {
+	display: block;
+
+}
+.adress-logo p {
+	line-height: 36px;
+	font-size: 16px;
+}
+
+
+/* 461-575px sm-col*/
+@media screen and (max-width: 575px) {
+.buttons{
+	display: block;
+}
+
+ .container {
+	width: 90%;
+}
+
+.connection {
+	display: flex;
+	margin-left: 0;
+	flex-wrap: nowrap;
+}
+
+ .connection__item {
+ 	margin-left: 10px;
+ 	width: 35px;
+	height: 35px;
+ }
+
+.connection__item svg {
+ 	width: 22px;
+ 	height: 22px;
+ }
+
+.offer {
+	padding-top: 30px;
+	padding-bottom: 70px;
+}
+.offer__title {
+	width: 410px;
+	max-width: 100%;
+	font-size: 34px;
+	line-height:60px;
+}
+
+.span-title {
+	padding-right: 20px;
+	padding-left: 40px;
+}
+
+.offer__text {
+	width: 338px;`
+	max-width: 100%;
+	margin-top: 0;
+	line-height: 30px;
+}
+
+.offer__btn {
+	width: 254px;
+	font-size: 20px;
+}
+
+.about {
+	padding: 50px 0;
+}
+
+.about-wrap {
+	padding:22px;
+	text-align: center;
+}
+
+.about-wrap__title {
+	margin-bottom: 15px;
+	font-size: 25px
+}
+
+.about-wrap__text {
+	margin-bottom: 24px;
+	line-height: 22px;
+}
+
+.icon__text_long {
+	position: relative;
+	left: 0;
+	width: 100%;
+}
+
+.choice-title span {
+	display: block;
+}
+
+.man-top {
+	height: auto;
+}
+
+.ways {
+	margin-bottom: 50px;
+}
+.ways__item__text {
+	font-size: 13px;
+	font-weight: 700;
+}
+
+.ways__item__span {
+    opacity: 0.43;
+}
+
+.form {
+	    padding: 10px 30px 40px;
+}
+
+.form__input {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	font-size: 14px;
+}
+
+.form__title {
+	font-size: 22px;
+}
+
+.form__text {
+	font-size: 14px;
+}
+
+.form__send {
+	font-size: 16px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.reviews {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.reviews h2 {
+	font-size: 24px;
+	margin-bottom: 30px;
+}
+
+.description__name {
+	font-size: 16px;
+}
+
+.description__text {
+	font-size: 14px;
+}
+
+.section-sk h3 {
+	font-size: 18px;
+}
+
+.tass {
+	margin-top: 17px;
+}
+
+.universalna {
+	margin-top: 22px;
+}
+
+.vuso {
+	margin-top: 20px;
+}
+
+.aska {
+	margin-top: 25px;
+}
+
+.oranta {
+	margin-top: 18px;
+}
+
+.maps {
+	padding-top: 70px;
+}
+
+.wrap-map {
+	padding: 0;
+	background-color:transparent;
+	box-shadow: none;
+}
+
+.coordinates__li {
+    width: 100%;
+}
+
+.coordinates__img {
+	margin-right: 5px;
+}
+
+
+.coordinates__link {
+	padding-top: 5px;
+	font-size: 18px;
+}
+
+.coordinates__link_padding {
+	padding-top: 0;
+}
+
+
+.wrap-skype {
+	width: 90%;
+}
+
+.wrap-skype__img {
+	margin-left: -30px;
+	width: 90px;
+	height: 90px;
+}
+
+.questions {
+	margin-left: 0;
+	width: 100%;
+}
+
+
+.wrap-line {
+	width: 100%;
+	margin-left: 2%;
+}
+
+.wrap-form {
+	width: 90%;
+	margin-left: 10px;
+}
+
+.wrap-form input {
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    padding-left: 33px;
+    margin-bottom: 21px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.20);
+    color: #a2a2a3;
+}
+
+.wrap-form button {
+    background-color: #f5a636;
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 0px rgba(245,166,54,0.84);
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.adress-logo__link {
+	display: none;
+}
+
+.adress-logo ,.sots{
+	width: 200px;
+	max-width: 100%;
+	margin: 0 auto;
+	font-size: 18px;
+}
+
+.sots {
+	margin-top: 10px;
+}
+/*------actic-modal--------	*/
+.man-top__form {
+	width: 350px;
+}
+
+.arcticmodal-close {
+	margin-bottom: -15px;
+	padding-left: 94%;
+}
+}
+
+/*  462-320px -col*/
+@media screen and (max-width: 460px) {
+.menu-btn svg {
+	height: 40px;
+	width: 40px;
+	}
+
+.span-title {
+	padding: 0;
+}
+
+.offer__text__yel {
+	background-color: #5389ae;
+	color:#fcf8f8;
+	padding-right: 5px;
+ 
+}
+
+.about-wrap {
+	padding:11px;
+}
+
+.about-wrap__title {
+	text-align: center;
+}
+
+.about-wrap__text {
+	margin-bottom: 12px;
+	line-height: 21px;
+}
+
+.text {
+	padding-top: 40px;
+}
+/*--------form--------*/
+.form__input {
+	font-size: 12px;
+}
+
+.form {
+	    padding: 10px 15px 40px;
+}
+/*-------------------------*/
+
+.reviews h2 {
+	font-size: 20px;
+}
+
+.description__name {
+	font-size: 14px;
+}
+
+.description time {
+	font-size: 14px;
+}
+.description__text {
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.sl__slide {
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.tass {
+	margin-top: 14px;
+}
+
+.universalna {
+	margin-top: 18px;
+}
+
+.vuso {
+	margin-top: 13px;
+}
+
+.aska {
+	margin-top: 17px;
+}
+
+.oranta {
+	margin-top: 10px;
+}
+.maps {
+	padding-bottom: 70px;
+}
+
+.questions {
+	margin-left: 0;
+    padding-top: 25px;
+    padding-bottom: 5px;
+
+}
+
+.questions__title {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.questions__text {
+	padding-left: 10px;
+	padding-right: 10px;
+    font-size: 15px;
+}
+
+.wrap-skype__img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: -40px;
+    margin-left: -15px;
+
+
+} 
+.wrap-line {
+	width: 100%;
+	margin-left: 2%;
+    margin-top: -60px;
+}
+
+.wrap-form {
+    margin-top: -165px;
+}
+
+.wrap-form input {
+    padding-top: 15px;
+    padding-bottom: 10px;
+
+    padding-left: 15px;
+}
+
+.wrap-form button {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 17px;
+
+}
+
+/*------actic-modal--------	*/
+
+.overlayMenu ul li a{
+	font-size: 25px;
+}
+.man-top__form {
+	width: 280px;
+}
+
+
+.arcticmodal-close {
+	margin-bottom: -14px;
+	padding-left: 93%;
+}
+
+/*--------gamburger-----*/
+
+.overlayMenu .menu_long3 {
+    padding-left: 0;
+    width: 280px;
+}
+.overlayMenu .menu_long1:hover {
+	 padding-left: 0;
+    width: 285px;
+}
+
+
+.overlayMenu .menu_long2:hover {
+	 padding-left: 0;
+    width: 285px;
+}
+
+.overlayMenu .menu_long3:hover {
+	 padding-left: 0;
+    width: 290px;
+}
+
+}
